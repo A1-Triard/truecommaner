@@ -17,6 +17,7 @@ library
   hs-source-dirs: src
   exposed-modules: Lib
   build-depends: base >= 4.7 && < 5
+               , ntflh
   default-extensions: BangPatterns
                     , CPP
                     , DataKinds
@@ -64,6 +65,7 @@ executable tcm
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends: base
                , truecommander
+               , ntflh
   default-extensions: BangPatterns
                     , CPP
                     , DataKinds
